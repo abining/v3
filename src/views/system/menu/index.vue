@@ -1,5 +1,5 @@
 <template>
-  <doc-alert title="功能权限" url="https://doc.iocoder.cn/resource-permission" />
+   <doc-alert title="功能权限" url="https://doc.iocoder.cn/resource-permission" />
   <doc-alert title="菜单路由" url="https://doc.iocoder.cn/vue3/route/" />
 
   <!-- 搜索工作栏 -->
@@ -39,7 +39,7 @@
   </content-wrap>
 
   <!-- 列表 -->
-  <content-wrap>
+  
     <el-table v-if="refreshTable" v-loading="loading" :data="list" :default-expand-all="isExpandAll" row-key="id">
       <el-table-column label="菜单名称" prop="name" :show-overflow-tooltip="true" width="250" />
       <el-table-column align="center" label="图标" prop="icon" width="100">
@@ -66,7 +66,7 @@
         </template>
       </el-table-column>
     </el-table>
-  </content-wrap>
+ 
 
   <!-- 表单弹窗：添加/修改 -->
   <menu-form ref="formRef" @success="getList" />

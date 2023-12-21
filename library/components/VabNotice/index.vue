@@ -10,9 +10,13 @@
             <el-scrollbar>
               <ul v-if="badge">
                 <li v-for="(item, index) in notices" :key="index">
-                  <el-avatar :size="45" :src="item.image" />
-                  <span v-html="item.notice" />
+                  <el-avatar :size="45" :src="item.image" v-html="item.content"/>
+                  <!-- <div v-html="item.content"></div> 
+                  必须使用element的图片组件
+                  -->
+                  <span v-html="item.title" />
                 </li>
+                <!-- <li>abctest</li> -->
               </ul>
               <el-empty v-else description="暂无数据" />
             </el-scrollbar>

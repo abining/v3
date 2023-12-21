@@ -69,8 +69,6 @@
           <vab-icon icon = 'ep:cpu'>2</vab-icon>
           </el-button> -->
         </el-tab-pane></template>
-        
-        
       </template>
     </el-tabs>
 
@@ -91,7 +89,7 @@
 </template>
 
 <script lang="ts" setup>
-import { method } from 'lodash-es'
+// import { method } from 'lodash-es' 未使用，注释掉
 import { defaultOpeneds, isHashRouterMode, openFirstMenu, uniqueOpened } from '/@/config'
 import { translate } from '/@/i18n'
 import { useRoutesStore } from '/@/store/modules/routes'

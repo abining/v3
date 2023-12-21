@@ -1,9 +1,9 @@
 <template>
   <div class="vab-app-main">
-    <section>
+    <div class="user-management-container auto-height-container">
       <vab-router-view />
       <vab-footer />
-    </section>
+    </div>
   </div>
 </template>
 
