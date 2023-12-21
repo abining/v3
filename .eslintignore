@@ -1,0 +1,8 @@
+/library/build/unplugin/components.d.ts
+node_modules
+src/assets
+src/icons
+public
+dist
+/*.js
+/src/components/bpmnProcessDesigner/src/highlight/index.js
